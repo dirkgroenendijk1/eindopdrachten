@@ -1,0 +1,73 @@
+body:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -10;
+  background-image: url(./foto/usa\ flag.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  background-color: lightblue;
+}
+body {
+  
+  background-color: #795de0;
+  color: rgb(250, 255, 255);
+  font: normal 16px Georgia, "Times New Roman", Times, sans-serif;
+  font-style: italic;
+  line-height: 1.6em;
+  text-align: center;
+}
+
+.box{
+  display: flex;
+  border: 5px solid blue;
+  max-width:700px;
+  flex-wrap: wrap;
+  align-content: center;
+  width: clamp(300px, 80%, 800px);
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 15px;
+  margin: auto;
+
+}
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: unset;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  color: blue;
+}
+
+img {
+  border-radius: 25px;
+}
+nav {
+  text-align: center;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: lighter;
+  padding: 10px;
+}
+
+ul {
+  padding: 10px;
+}
+@media only screen and (min-width: 1024px) {
+  body:before {
+    background-image: url(./foto/background-1.jpg);
+    }
+    body{
+      line-height: 1.2em;
+    font: normal 20px Georgia, "Times New Roman", Times, sans-serif;
+    }
+}

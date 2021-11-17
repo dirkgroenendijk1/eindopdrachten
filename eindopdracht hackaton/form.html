@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dirk Groenendijk" />
+    <link rel="stylesheet" href="form.css" />
+    <title>contact-form</title>
+  </head>
+  <body>
+
+    <main>
+      <form name="contact-form" method="post" data-netlify="true">
+
+        <div class="contact-form">
+
+          <div class="top">
+            <h1>contact formulier</h1>
+          </div>
+          <div class="left">
+            <div>
+              <label for="name">Uw naam</label>
+              <input type="text" name="name" id="name" required />
+            </div>
+            <div>
+              <label for="email">Uw Email</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div>
+              <label for="phone">Uw telefoonnummer (tel):</label>
+              <input type="phone" name="phone" id="phone" />
+            </div>
+            <div>
+              <label for="age">Uw Leeftijd:</label>
+              <input type="number" name="age" id="age" />
+            </div>
+            <div>
+              <label for="date">Uw Geboortedatum:</label>
+              <input type="date" name="date" id="date" min="1970-01-01" />
+            </div>
+            <br>
+            <div>
+              Gender:
+              <div>
+                <label for="male">Man</label>
+                <input type="radio" name="gender" id="male" value="male" />
+              </div>
+              <div>
+                <label for="female">Vrouw</label>
+                <input type="radio" name="gender" id="female" value="female" />
+              </div>
+              <div>
+                <label for="other">Other</label>
+                <input type="radio" name="gender" id="other" value="other" />
+              </div>
+            </div>
+          </div>  
+          <br />
+          <div class="right">
+            Heeft u favoriete steden die we u hebben laten zien?
+            <br /><br />
+            <div>
+              <label for="chicago">Chicago</label>
+              <input type="checkbox" name="chicago" id="chicago" />
+            </div>
+            <div>
+              <label for="newyork">New York</label>
+              <input type="checkbox" name="newyork" id="newyork" />
+            </div>
+            <div>
+              <label for="fortlauderdale">Ford Lauderdale</label>
+              <input type="checkbox" name="fortlauderdale" id="fortlauderdale" />
+            </div>
+            <div>
+              <label for="miami">Miami</label>
+              <input type="checkbox" name="miami" id="miami" />
+            </div>
+            <div>
+              <label for="keywest">Key West</label>
+              <input type="checkbox" name="keywest" id="keywest" />
+            </div>
+            <div>
+              <label for="lasvegas">Las Vegas</label>
+              <input type="checkbox" name="lasvegas" id="lasvegas" />
+            </div>
+            <div>
+              <label for="sanfrancisco">San Francisco</label>
+              <input type="checkbox" name="sanfrancisco" id="sanfrancisco" />
+            </div>
+            <div>
+              <label for="losangeles">Los Angeles</label>
+              <input type="checkbox" name="losangeles" id="losangeles" />
+            </div>
+            <div>
+              <label for="maui">Maui</label>
+              <input type="checkbox" name="maui" id="maui" />
+            </div>
+            <div>
+              <label for="oahu">Oahu</label>
+              <input type="checkbox" name="oahu" id="oahu" />
+            </div>
+          </div>
+
+          <div class="bottum">
+            <br />
+            <label for="reistips">Uw reisadvies en tips</label><br /><br />
+            <textarea
+              id="reistips"
+              name="reistips"
+              cols="45"
+              rows="10"
+              placeholder="Heeft u nog reisadviezen?"
+            ></textarea>
+            <br />
+  
+            <button type="reset">Reset</button>
+            <button type="submit">Verzend</button>
+            <br />
+            <br />
+            <input type="button" value="Terug" onclick="history.back()" />
+          </div>
+
+        </div>
+        
+      </form>
+      
+    </main>
+
+  </body>
+
+</html>
