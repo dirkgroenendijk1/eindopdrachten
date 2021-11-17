@@ -1,0 +1,86 @@
+* {
+  padding: 10px;
+}
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  background-color: grey;
+}
+
+p {
+  background-color: rgb(255, 252, 249);
+  border-radius: 10px;
+}
+
+span {
+  text-transform: uppercase;
+}
+nav {
+  width: 200px;
+
+  #menu-btn {
+    width: 90px;
+    height: 90px;
+    background-color: transparent;
+    background-image: url(./img/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+  }
+  #menu-btn:hover {
+    transform: rotate(90deg);
+  }
+  #menu-color {
+    opacity: 0;
+    width: 200px;
+    left: 0px;
+    top: 150px;
+    position: absolute;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: rgb(105, 151, 236);
+    animation-name: slideRight;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    
+  }
+  @keyframes slideRight {
+   0%{left :-300px;}
+   100%{left:200px;} 
+  }
+  @keyframes slideleft {
+    0%{left:200px;}
+    100%{left:1500px;}   
+  }
+
+  li {
+    border-style: solid;
+    border-radius: 10px;
+    list-style: none;
+    text-align: center;
+  }
+}
+
+.gray {
+  background-color: gray;
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: rgb(255, 115, 0);
+}
+
+.purple {
+  background-color: purple;
+}
+
+.green {
+  background-color: green;
+}

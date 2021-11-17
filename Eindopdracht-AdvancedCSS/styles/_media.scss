@@ -1,0 +1,93 @@
+.media {
+    @include flexCenter(center, flex-end);
+    flex-flow: column;
+    text-align: center;
+    position: fixed;
+    top:0;
+    right: 0;
+    z-index: 1;
+    
+    .social-media {     
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      transition-duration: 3s;
+      transition: all 0.4s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    }
+    .social-media .text2 {
+      position: relative;
+      visibility: hidden;
+      bottom: 45px;
+      left: 15px;
+      margin-left: 5px;
+      transition: 0ms;
+    }
+    .social-media:hover .text2 {
+      visibility: visible;
+      color: $textcolor;
+      transition-delay: 0.1s;
+    }
+    .face:hover,
+    .insta:hover,
+    .twit:hover,
+    .link:hover,
+    .git:hover {
+      width: 200px;
+    }
+    .social-media::before {
+      display: flex;
+      margin-left: 10px;
+    }
+  
+    .face::before,
+    .insta::before,
+    .twit::before,
+    .link::before,
+    .git::before {
+      font-family: "Font Awesome 5 brands";
+      font-size: 30px;
+      color: $textcolor;
+    }
+  
+    .social-media {
+      margin-right: 2rem;
+    }  
+    .social-media.insta {
+      transition-timing-function: linear;
+      background-color: #e17b77;
+    }
+    .social-media.face {
+      transition-timing-function: linear;
+      background-color: #3b5998;
+    }
+    .social-media.twit {
+      transition-timing-function: linear;
+      background-color: #00aced;
+    }
+    .social-media.git {
+      transition-timing-function: linear;
+      background-color: #333;
+    }
+    .social-media.link {
+      transition-timing-function: linear;
+      background-color: #007bb6;
+    }
+    .insta::before {
+      content: "\f16d";
+    }
+    .twit::before {
+      content: "\f099";
+    }
+    .link::before {
+      content: "\f0e1";
+    }
+    .face::before {
+      content: "\f39e";
+    }
+    .git::before {
+      content: "\f09b";
+    }
+}

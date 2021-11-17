@@ -1,0 +1,28 @@
+@import './variables';
+@import './media';
+@import './portfolio';
+@import './card';
+@mixin flexCenter($justify, $alignItems) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify;
+    align-items: $alignItems;
+  }
+  
+
+
+body {
+  background-color: #c3cfe2;
+  font-size: 1.3em;
+  line-height: 1.8rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: $textmaincolor;
+}
+
+
+
+
+
+
+

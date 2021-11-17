@@ -1,0 +1,131 @@
+* {
+  padding: 10px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: grey;
+}
+
+p {
+  background-color: #fffcf9;
+  border-radius: 10px;
+}
+
+span {
+  text-transform: uppercase;
+}
+
+nav {
+  width: 200px;
+}
+
+nav #menu-btn {
+  width: 90px;
+  height: 90px;
+  background-color: transparent;
+  background-image: url(./img/menu.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  border-radius: 15px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+nav #menu-btn:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+nav #menu-color {
+  opacity: 0;
+  width: 200px;
+  left: 0px;
+  top: 150px;
+  position: absolute;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: #6997ec;
+  -webkit-animation-name: slideRight;
+          animation-name: slideRight;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideRight {
+  0% {
+    left: -300px;
+  }
+  100% {
+    left: 200px;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    left: -300px;
+  }
+  100% {
+    left: 200px;
+  }
+}
+
+@-webkit-keyframes slideleft {
+  0% {
+    left: 200px;
+  }
+  100% {
+    left: 1500px;
+  }
+}
+
+@keyframes slideleft {
+  0% {
+    left: 200px;
+  }
+  100% {
+    left: 1500px;
+  }
+}
+
+nav li {
+  border-style: solid;
+  border-radius: 10px;
+  list-style: none;
+  text-align: center;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: #ff7300;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.green {
+  background-color: green;
+}
+/*# sourceMappingURL=styles.css.map */

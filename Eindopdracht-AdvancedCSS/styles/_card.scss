@@ -1,0 +1,36 @@
+.card {
+  @include flexCenter(center, center);
+    background-color: $backgroundColor;
+    width: 300px;
+    height: 500px;
+    border-radius: $radius-card;
+    margin: 5px;
+    padding: 25px;
+    -webkit-box-shadow: 2px 10px 15px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 10px 15px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 10px 15px -5px rgba(0, 0, 0, 0.75);
+    .card-foto {
+      border-radius: 60px;
+      margin-bottom: -60px;
+      height: 120px;
+    }
+    .name {
+      @include flexCenter(flex-end, center);
+      color: $textcolor;
+      padding: 25px;
+      width: 300px;
+      height: 210px;
+      border-radius: 0 0 $radius-card $radius-card;
+      margin-bottom: -26px;
+      padding-top: 30px;
+      background: radial-gradient(
+        circle at center top,
+        transparent 65px,
+        #686de0 0
+      );
+      p {
+        color: #aeb0ec;
+      }
+    }
+    
+  }
