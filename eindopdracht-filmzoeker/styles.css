@@ -21,4 +21,53 @@ body {
   background-color: #f1f1f1;
   text-align: center;
 }
+
+h1 {
+  font-size: 5rem;
+  font-family: 'Merriweather', serif;
+}
+
+nav {
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+}
+
+#movie-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px;
+  margin: 15px;
+}
+
+img {
+  height: 400px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+li {
+  padding: 5px;
+  display: inline;
+}
+
+form {
+  margin-top: 20px;
+}
+
+footer {
+  color: green;
+}
 /*# sourceMappingURL=styles.css.map */
