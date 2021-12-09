@@ -51,3 +51,4 @@ const filterMovies = (nameInMovieTitle) => {
     console.log(filterMovies)
     return filterMovies;
 };
+
