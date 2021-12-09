@@ -83,6 +83,8 @@ function handleOnChangeEvent(event) {
 }
 handleOnChangeEvent();
 
+// bonus item toegepast
+
 searchBar.addEventListener('keyup', (e) => {
     let searchTerm = e.target.value.toLowerCase();
     let filteredTitles = movies.filter(movie => {
