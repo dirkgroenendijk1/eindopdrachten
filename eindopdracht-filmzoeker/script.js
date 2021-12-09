@@ -40,3 +40,15 @@ function addEventListener() {
     }));
 }
 addEventListener()
+
+//fiteren van nieuwe films 
+const newMovie = movies.filter((movie) => movie.Year >= 2014);
+
+
+// filteren van filmtype
+const filterMovies = (nameInMovieTitle) => {
+    const filterMovies = movies.filter((movie) => movie.Title.includes(nameInMovieTitle));
+    console.log(filterMovies)
+    return filterMovies;
+};
+
