@@ -22,6 +22,7 @@ function addMoviesToDom(movies) {
         movieNav.appendChild(movieList);
     });
 };
+
 // verwijderen vam movies van de dom
 const removeMovieFromDom = () => {
     const movies = movieNav.childNodes.length;
@@ -29,3 +30,13 @@ const removeMovieFromDom = () => {
         movieNav.removeChild(movieNav.childNodes[0]);
     }
 };
+
+// oppakken van de buttons 
+function addEventListener() {
+    const filmfilter = document.querySelectorAll('input[type=radio][name="movie"]');
+    filmfilter.forEach(radio => radio.addEventListener('change', () => {
+        console.log("de " + radio.value + " button is ingedrukt")
+        handleOnChangeEvent(radio.value)
+    }));
+}
+addEventListener()
