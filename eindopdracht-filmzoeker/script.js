@@ -1,4 +1,5 @@
 const movieNav = document.getElementById('movie-container');
+const searchBar = document.forms['search-movies'].querySelector('input');
 // inladen movies van data op de dom
 function addMoviesToDom(movies) {
     var movieList = movies.map((movie => {
@@ -81,4 +82,14 @@ function handleOnChangeEvent(event) {
 
 }
 handleOnChangeEvent();
+
+searchBar.addEventListener('keyup', (e) => {
+    let searchTerm = e.target.value.toLowerCase();
+    let filteredTitles = movies.filter(movie => {
+        return movie.Title.toLowerCase().includes(searchTerm)
+    });
+    console.log(filteredTitles);
+    removeMovieFromDom();
+    addMoviesToDom(filteredTitles);
+});
 
