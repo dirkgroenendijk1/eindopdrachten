@@ -22,3 +22,21 @@ function addMoviesToDom(movies) {
         movieNav.appendChild(movieList);
     });
 };
+
+
+
+
+
+
+
+
+
+// oppakken van de buttons 
+function addEventListener() {
+    const filmfilter = document.querySelectorAll('input[type=radio][name="movie"]');
+    filmfilter.forEach(radio => radio.addEventListener('change', () => {
+        console.log("de " + radio.value + " button is ingedrukt")
+        handleOnChangeEvent(radio.value)
+    }));
+}
+addEventListener()
