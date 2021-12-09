@@ -40,9 +40,9 @@ function addEventListener() {
     }));
 }
 addEventListener()
+
 //fiteren van nieuwe films 
 const newMovie = movies.filter((movie) => movie.Year >= 2014);
-
 
 // filteren van filmtype
 const filterMovies = (nameInMovieTitle) => {
@@ -81,3 +81,4 @@ function handleOnChangeEvent(event) {
 
 }
 handleOnChangeEvent();
+
