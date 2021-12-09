@@ -44,11 +44,41 @@ addEventListener()
 //fiteren van nieuwe films 
 const newMovie = movies.filter((movie) => movie.Year >= 2014);
 
-
 // filteren van filmtype
 const filterMovies = (nameInMovieTitle) => {
     const filterMovies = movies.filter((movie) => movie.Title.includes(nameInMovieTitle));
     console.log(filterMovies)
     return filterMovies;
 };
+
+// het activeren van de filter funtie
+function handleOnChangeEvent(event) {
+    removeMovieFromDom();
+    switch (event) {
+        case 'newmovies':
+            console.log("newmovie");
+            addMoviesToDom(newMovie);
+            break;
+        case 'avenger':
+            console.log("avenger");
+            addMoviesToDom(filterMovies("Avenger"));
+            break;
+        case 'xmen':
+            console.log("X-men");
+            addMoviesToDom(filterMovies("X-Men"));
+            break;
+        case 'princess':
+             console.log("princess");
+            addMoviesToDom(filterMovies("Princess"));
+            break;
+        case 'batman':
+            console.log("batman");
+            addMoviesToDom(filterMovies("Batman"));
+            break;
+        default:
+            addMoviesToDom(movies)
+    }
+
+}
+handleOnChangeEvent();
 
