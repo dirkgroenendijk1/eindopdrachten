@@ -23,13 +23,13 @@ function addMoviesToDom(movies) {
     });
 };
 
-
-
-
-
-
-
-
+// verwijderen vam movies van de dom
+const removeMovieFromDom = () => {
+    const movies = movieNav.childNodes.length;
+    for (let i = 0; i < movies; i++) {
+        movieNav.removeChild(movieNav.childNodes[0]);
+    }
+};
 
 // oppakken van de buttons 
 function addEventListener() {
