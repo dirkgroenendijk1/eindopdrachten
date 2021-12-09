@@ -22,3 +22,10 @@ function addMoviesToDom(movies) {
         movieNav.appendChild(movieList);
     });
 };
+// verwijderen vam movies van de dom
+const removeMovieFromDom = () => {
+    const movies = movieNav.childNodes.length;
+    for (let i = 0; i < movies; i++) {
+        movieNav.removeChild(movieNav.childNodes[0]);
+    }
+};
